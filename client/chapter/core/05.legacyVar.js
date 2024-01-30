@@ -10,10 +10,25 @@ let outside = 'outer';
 {
   console.log(outside);
 
+  console.log(outside);
+
   let inside = 'inner';
 }
-console.log(inside);
+
+let inside = 'another';
+
+// (function (){
+//   var outside = 'outer'
+//   console.log(outside);
+
+// })()
 
 // var는 변수의 중복 선언을 허용합니다
+
+var a = 10;
+// var a = 5;
+
+// let b = 30;
+// let b = 50;
 
 // 선언하기 전 사용할 수 있는 var
