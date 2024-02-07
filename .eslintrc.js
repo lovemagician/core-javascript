@@ -4,23 +4,29 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: "eslint:recommended",
+  extends: 'eslint:recommended',
+  globals: {
+    getNode: true,
+    getNodes: true,
+    attr: true,
+    insertLast: true,
+  },
   overrides: [
     {
       env: {
         node: true,
       },
-      files: [".eslintrc.{js,cjs}"],
+      files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
-        sourceType: "script",
+        sourceType: 'script',
       },
     },
   ],
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
   rules: {
-    "no-unused-vars": "off",
+    'no-unused-vars': 'off',
   },
 };
